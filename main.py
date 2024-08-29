@@ -9,12 +9,13 @@ import threading
 import json
 from os import environ
 
-bot_token = environ.get("TOKEN", "") 
-api_hash = environ.get("HASH", "") 
-api_id = int(environ.get("ID", ""))
+bot_token = environ.get("TOKEN", "7352645964:AAHjLhEQ17cBn2xnFWLazCwA_eOeP-JRWcE") 
+api_hash = environ.get("HASH", "ea9db4503ed7088b788e06dfd818e00e") 
+api_id = int(environ.get("ID", "13384432"))
 bot = Client("mybot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
-ss = environ.get("STRING", "")
+
+ss = environ.get("STRING", "BAHEEB8AAEoON6N4bRGTibWaLmBqwzyO96W_14Wgng-2HQSXG1HDx50qh7mYNXkLDwzVL-mSzSMd7OHccEccwlBHBGGj7vEsUWjOtrpoQcuPr3ITrGIAcrUvhoDV73PvY3Q1wJbRwLDXZe97JNQN5LZGoyH57BRDERRwvkKN1nruu6XV1gHdqL7Tner8eXQ0KD007_XHdAOEttmAYx8pGIxeLN4be9Sb4YLhlXPqUsfXKAkS0_Xy-3FRTf8eFo_A26TlvGWqtei1Fu448jjAn3FgjEemNMP_zR6jQheDeGoVkxItrr4yiu1qW7pwKi-jjE4L78LFV_gZioJTcR5K3tS1lrmZGQAAAAGM5W7fAA")
 if ss is not None:
 	acc = Client("myacc" ,api_id=api_id, api_hash=api_hash, session_string=ss)
 	acc.start()
